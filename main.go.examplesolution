@@ -24,7 +24,7 @@ func main() {
 	// use `handleRequest(r request)` function
 	for r := range activeRequests {
 		wg.Add(1)
-		func(r request) {
+		go func(r request) {
 			handleRequest(r)
 			wg.Done()
 		}(r)
