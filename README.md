@@ -2,7 +2,7 @@
 
 ## Background
 
-
+There is a mock server inside `mockserver.go` file. To run the mock server, there is a `runMockServer()` function. It will create connections using pre-defined `mockConnections` slice of `connection`s. After the connections are being assigned to `activeConnections`, this function will run `generateSomeRequests`. As the name suggests, it will generate requests, you will have to handle. They will sit into `activeRequests` channel. 
 
 ## TODO
 
