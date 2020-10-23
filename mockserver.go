@@ -6,8 +6,6 @@ import (
 	"time"
 )
 
-// const nanosecondsInSecond = 1000000000
-
 var mockConnections = []connection{
 	{ip: "111.111.111.111"},
 	{ip: "222.222.222.222"},
